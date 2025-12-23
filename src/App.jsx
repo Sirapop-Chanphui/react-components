@@ -93,8 +93,7 @@ function ProductSection() {
             />
             <h3>Premium Bluetooth Headphones</h3>
             <p className="product-price">2,400 Baht</p>
-            {/* ใช้ AddToCartButton (Todo 5 & 6) */}
-            <AddToCartButton />
+            <Button />
           </div>
           <div className="product-card">
             <img
@@ -103,7 +102,7 @@ function ProductSection() {
             />
             <h3>Classic Leather Watch</h3>
             <p className="product-price">4,000 Baht</p>
-            <AddToCartButton />
+            <Button />
           </div>
           <div className="product-card">
             <img
@@ -112,7 +111,7 @@ function ProductSection() {
             />
             <h3>Organic Green Tea</h3>
             <p className="product-price">79.99 Baht</p>
-            <AddToCartButton />
+            <Button />
           </div>
         </div>
       </div>
@@ -126,9 +125,9 @@ function ProductSection() {
           แก้ไข className ใน Component `Button` ที่สร้างขึ้นมา
           จาก “add-to-cart-button” เป็น “add-to-cart-button-secondary”
 */
-function AddToCartButton() {
+function Button() {
   return (
-    <button className="add-to-cart-button-secondary">Add to Cart</button>
+    <button className="<BlueText>add-to-cart-button-secondary</BlueText>">Add to Cart</button>
   );
 }
 
